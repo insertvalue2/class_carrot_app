@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'product_detail.dart';
 import '../../../models/product.dart';
 
 class ProductItem extends StatelessWidget {
@@ -22,8 +23,10 @@ class ProductItem extends StatelessWidget {
               height: 115,
               fit: BoxFit.cover,
             ),
-          )
-          // 상품 설명
+          ),
+          const SizedBox(width: 16.0),
+          // 상품 설명 - 위젯
+          ProductDetail(product: product)
         ],
       ),
     );
