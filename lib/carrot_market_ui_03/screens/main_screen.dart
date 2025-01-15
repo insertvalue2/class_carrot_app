@@ -44,6 +44,11 @@ class _MainScreenState extends State<MainScreen> {
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.white,
+          // 동일한 크기의 탭을 만들어 준다.
+          type: BottomNavigationBarType.fixed,
+          // 현재 선택된 탭 번호 명시
+          currentIndex: _selectedIndex,
           onTap: (index) {
             changeStackPages(index);
           },
